@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTreeVIew", "WpfTreeVIew\WpfTreeVIew.csproj", "{E350F2AB-2483-4A65-AEB1-38AE028C7BCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E350F2AB-2483-4A65-AEB1-38AE028C7BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E350F2AB-2483-4A65-AEB1-38AE028C7BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E350F2AB-2483-4A65-AEB1-38AE028C7BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E350F2AB-2483-4A65-AEB1-38AE028C7BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ED31136-27F0-42EC-B200-35E03F3E054C}
+	EndGlobalSection
+EndGlobal

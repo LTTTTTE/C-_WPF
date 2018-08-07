@@ -1,0 +1,15 @@
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\bin\Debug\WpfTreeVIew.exe.config
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\bin\Debug\WpfTreeVIew.exe
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\bin\Debug\WpfTreeVIew.pdb
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\WpfTreeVIew.csprojResolveAssemblyReference.cache
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\MainWindow.g.cs
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\App.g.cs
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\WpfTreeVIew_MarkupCompile.cache
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\WpfTreeVIew_MarkupCompile.lref
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\MainWindow.baml
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\WpfTreeVIew.g.resources
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\WpfTreeVIew.Properties.Resources.resources
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\WpfTreeVIew.csproj.GenerateResource.cache
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\WpfTreeVIew.csproj.CoreCompileInputs.cache
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\WpfTreeVIew.exe
+c:\users\db2\source\repos\WpfTreeVIew\WpfTreeVIew\obj\Debug\WpfTreeVIew.pdb
