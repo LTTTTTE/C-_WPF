@@ -8,7 +8,7 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            var K = "AX< CMV>D SMSDÇÂ¤¨>¤© ¤Ì<À¸Ãß¤¨¤³> ¤Ç¤¾<>¤½M<ZX CE<¤© ¤·±¸ÀÌ¿¡¿¡À¸¿¡¤ÑÀÌ¿¢±¸¿¢±¸¿¢±¸¿¡¿¡¿¢<span class=\"todaytemp\">26</span>< p class=\"cast_txt\">±¸¸§Á¶±İ, ¾îÁ¦ ±â¿Â°ú °°¾Æ¿ä</p>\"±¸¿¢±¸¿¢ ±¸¾Æ¿¡¿¡¤Ì¤±¤¤¤·¤½ ><¤· V><SMV>SDGJ LÂ¥¤¨¤¾¤¤¤·¤½KJEFN <¤Ñ>SVNS <DN ¤Ó¤¢¤Q SD<>VM <¤¤¤·>< ¤®C EHLIGSDN<¤½¤¼¤½ ¤¨¤Ì µû¤³¤© <>¤¼¤½ XD";
+            var K = "AX< CMV>D SMSDèš¤ãˆ>ã‰ ã¬<ç”Ÿè“„ãˆã“> ã§ã<>ãM<ZX CE<ã‰ ã—å§¥æˆšæ‹­æ‹­ç”Ÿæ‹­ã±æˆšæ¤å§¥æ¤å§¥æ¤å§¥æ‹­æ‹­æ¤<span class=\"todaytemp\">26</span>< p class=\"cast_txt\">å§¥ç¡¯ç¹•æ¦, å¬¢è–¦ å¥„ç´³å¼• æ—­ç„¼æ¨</p>\"å§¥æ¤å§¥æ¤ å§¥ç„¼æ‹­æ‹­ã¬ã‘ã„ã—ã ><ã— V><SMV>SDGJ Lä¿ƒãˆãã„ã—ãKJEFN <ã±>SVNS <DN ã³ã‚Q SD<>VM <ã„ã—>< ãC EHLIGSDN<ããœã ãˆã¬ é­šã“ã‰ <>ãœã XD";
             try
             {
                 var temperature = Strings.Split(Strings.Split(K, "<span class=\"todaytemp\">")[1], "</span>")[0];
@@ -23,4 +23,4 @@ namespace ConsoleApp3
                    
         }
     }
-}
+}ã…
