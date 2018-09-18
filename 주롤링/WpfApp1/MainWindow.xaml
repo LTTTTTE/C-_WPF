@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="520" Width="525">
+    <Grid>
+        <TextBox x:Name="tb_url" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <Button Content="Let's Trolling" HorizontalAlignment="Left" Margin="234,10,0,0" VerticalAlignment="Top" Width="84" Height="23" Click="Button_Click"/>
+        <TextBox x:Name="tb_fullsource" HorizontalAlignment="Left" Height="138" Margin="10,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" IsReadOnly="True"/>
+        <TextBlock x:Name="tb_city" HorizontalAlignment="Left" Margin="10,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385"/>
+        <TextBlock x:Name="tb_temperature" HorizontalAlignment="Left" Margin="10,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385"/>
+        <TextBlock x:Name="tb_weather" HorizontalAlignment="Left" Margin="10,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385"/>
+        <Button Content="나으 아이피" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Width="84" Height="23" Click="Button2_Click"/>
+        <TextBlock x:Name="tb_ip" HorizontalAlignment="Left" Margin="99,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="206"/>
+        <Button Content="날씨버튼" HorizontalAlignment="Left" Height="23" Margin="10,328,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_1"/>
+        <TextBox x:Name="tb_where_city" HorizontalAlignment="Left" Height="25" Margin="10,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="109,328,0,0">
+            <ComboBoxItem Content="부산" Selected="ComboBoxItem_Selected_Busan"/>
+            <ComboBoxItem Content="서울" Selected="ComboBoxItem_Selected_Seoul"/>
+            <ComboBoxItem Content="제주" Selected="ComboBoxItem_Selected_Jeju"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
