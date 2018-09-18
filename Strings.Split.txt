@@ -1,0 +1,26 @@
+using System;
+using System.Windows;
+using Microsoft.VisualBasic;
+namespace ConsoleApp3
+{
+    using Microsoft.VisualBasic;
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var K = "AX< CMV>D SMSD픈ㄸ>ㄹ ㅜ<으추ㄸㅃ> ㅗㅎ<>ㅍM<ZX CE<ㄹ ㅇ구이에에으에ㅡ이엑구엑구엑구에에엑<span class=\"todaytemp\">26</span>< p class=\"cast_txt\">구름조금, 어제 기온과 같아요</p>\"구엑구엑 구아에에ㅜㅁㄴㅇㅍ ><ㅇ V><SMV>SDGJ L짜ㄸㅎㄴㅇㅍKJEFN <ㅡ>SVNS <DN ㅣㄲ짷 SD<>VM <ㄴㅇ>< ㄾC EHLIGSDN<ㅍㅌㅍ ㄸㅜ 따ㅃㄹ <>ㅌㅍ XD";
+            try
+            {
+                var temperature = Strings.Split(Strings.Split(K, "<span class=\"todaytemp\">")[1], "</span>")[0];
+                Console.WriteLine(temperature);
+                var Weather = Strings.Split(Strings.Split(K, "< p class=\"cast_txt\">")[1], "</p>")[0];
+                Console.WriteLine(Weather);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+                   
+        }
+    }
+}
