@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Icon="Images/Logo/logo-small.png"
+        Background="DimGray" Title="DataGrid" Height="460" Width="800">
+    <Border Padding="5">
+        <StackPanel>
+            
+            <DataGrid x:Name="DataGrid" Width="auto" Height="auto">
+                <DataGrid.Resources>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="DarkOrange"/>
+                        <Setter Property="FontWeight" Value="ExtraBold"/>
+                        <Setter Property="BorderThickness" Value="0 0 2 3 "/>
+                        <Setter Property="BorderBrush" Value="Black"/>
+                        <Setter Property="Height" Value="25"/>
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding student_ID}" Header=" Student ID" Width="*" />
+                    <DataGridTextColumn Binding="{Binding student_Name}" Header=" Student Name" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding student_Address}" Header=" Student Address" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding student_Age}" Header=" Student Age" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding student_Country}" Header=" Student Country" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Grid Margin="0 5 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Margin="0 0 5 0" Grid.Column="1" x:Name="button_add_student" Content="Add New Student" Click="button_add_student_Click"/>
+                <Button Margin=" 5 0 0 0" Grid.Column="2" x:Name="buttton_del_student" Content="Delete Student" Click="buttton_del_student_Click"/>
+            </Grid>
+        </StackPanel>
+    </Border>
+</Window>
