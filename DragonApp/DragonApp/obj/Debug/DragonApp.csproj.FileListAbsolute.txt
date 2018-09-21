@@ -1,0 +1,17 @@
+C:\Users\DB2\source\repos\DragonApp\DragonApp\bin\Debug\DragonApp.exe.config
+C:\Users\DB2\source\repos\DragonApp\DragonApp\bin\Debug\DragonApp.exe
+C:\Users\DB2\source\repos\DragonApp\DragonApp\bin\Debug\DragonApp.pdb
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\MainWindow.g.cs
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\Window1.g.cs
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\App.g.cs
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp_MarkupCompile.cache
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp_MarkupCompile.lref
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\MainWindow.baml
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\Window1.baml
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.g.resources
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.Properties.Resources.resources
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.csproj.GenerateResource.cache
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.csproj.CoreCompileInputs.cache
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.exe
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.pdb
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.csprojResolveAssemblyReference.cache

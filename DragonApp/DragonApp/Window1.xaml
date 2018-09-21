@@ -1,0 +1,25 @@
+﻿<Window x:Class="DragonApp.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DragonApp"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Border Padding="5">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <ToggleButton x:Name="bt_copy" Content="Copy" Margin="5 0 0 0" Grid.Column="2" Command = "ApplicationCommands.Copy"/>
+                <Button x:Name="bt_close" Content="Close" Margin="5 0 0 0" Grid.Column="3" Click="bt_close_Click"/>
+            </Grid>
+            <TextBox  TextWrapping="Wrap" IsReadOnly="True" Margin="0 5 0 0" Padding="2" x:Name="tb_source" Height="380"/>
+        </StackPanel>
+    </Border>
+</Window>

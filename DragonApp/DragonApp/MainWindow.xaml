@@ -1,0 +1,60 @@
+﻿<Window x:Class="DragonApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DragonApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Border Padding="5">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="tb_url" Padding="2" Grid.Column="0"/>
+                <Button x:Name="bt_crawling" Padding="2" Margin="5 0 0 0" Content="크롤링" Grid.Column="1" Click="bt_crawling_Click"/>
+                <TextBlock FontWeight="ExtraBold" TextAlignment="Center" x:Name="tb_IP" Padding="2" Grid.Column="2" Margin="5 0 0 0"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock x:Name="tb_city"/>
+                    <TextBlock x:Name="tb_temperature"/>
+                    <TextBlock x:Name="tb_weather"/>
+                </StackPanel>
+                <StackPanel Margin="10 0 0 0" Grid.Column="1">
+                    <TextBlock x:Name="tb_movie_date"/>
+                    <TextBlock x:Name="tb_movie_1" Margin="0 5 0 0 "/>
+                    <TextBlock x:Name="tb_movie_2" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_movie_3" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_movie_4" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_movie_5" Margin="0 2.5 0 0 "/>
+                </StackPanel>
+                <StackPanel Margin="10 0 0 0" Grid.Column="2">
+                    <TextBlock x:Name="tb_search_date_time"/>
+                    <TextBlock Text="{Binding textBlocks[0]}" Margin="0 5 0 0 " x:Name="tb_search_1"/>
+                    <TextBlock x:Name="tb_search_2" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_search_3" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_search_4" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_search_5" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_search_6" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_search_7" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_search_8" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_search_9" Margin="0 2.5 0 0 "/>
+                    <TextBlock x:Name="tb_search_10" Margin="0 2.5 0 0 "/>
+                </StackPanel>
+                <StackPanel Margin=" 10 0 0 0" Grid.Column="3">
+                    <TextBlock x:Name="tb_test"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Border>
+</Window>
