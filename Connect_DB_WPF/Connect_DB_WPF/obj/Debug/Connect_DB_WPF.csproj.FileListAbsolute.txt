@@ -1,0 +1,17 @@
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\bin\Debug\Connect_DB_WPF.exe.config
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\bin\Debug\Connect_DB_WPF.exe
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\bin\Debug\Connect_DB_WPF.pdb
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Connect_DB_WPF.csprojAssemblyReference.cache
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\App.g.cs
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Connect_DB_WPF_MarkupCompile.cache
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Connect_DB_WPF_MarkupCompile.lref
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\MainWindow.baml
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Connect_DB_WPF.g.resources
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Connect_DB_WPF.Properties.Resources.resources
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Connect_DB_WPF.csproj.GenerateResource.cache
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Connect_DB_WPF.csproj.CoreCompileInputs.cache
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Connect_DB_WPF.exe
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Connect_DB_WPF.pdb
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Window1.g.cs
+C:\Users\DB2\source\repos\Connect_DB_WPF\Connect_DB_WPF\obj\Debug\Window1.baml
