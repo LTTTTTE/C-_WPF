@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DragonApp"
         mc:Ignorable="d"
+        Closing="Window_Closing"
+    
         Title="MainWindow" Height="450" Width="800">
     <Border Padding="5">
         <StackPanel>
@@ -18,7 +20,7 @@
                 <Button x:Name="bt_crawling" Padding="2" Margin="5 0 0 0" Content="크롤링" Grid.Column="1" Click="bt_crawling_Click"/>
                 <TextBlock FontWeight="ExtraBold" TextAlignment="Center" x:Name="tb_IP" Padding="2" Grid.Column="2" Margin="5 0 0 0"/>
             </Grid>
-            <Grid>
+            <Grid Margin=" 0 10 0 0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -26,33 +28,167 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0">
-                    <TextBlock x:Name="tb_city"/>
-                    <TextBlock x:Name="tb_temperature"/>
-                    <TextBlock x:Name="tb_weather"/>
+                    <TextBlock Padding="2" x:Name="tb_city"/>
+                    <TextBlock Padding="2" x:Name="tb_temperature"/>
+                    <TextBlock Padding="2" x:Name="tb_weather"/>
+                    <TextBlock Padding="2" x:Name="tb_dust"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="bt_refresh" Padding="2" Margin=" 0 5 0 0" Content="새로고침" Grid.Column="0" Click="bt_refresh_Click"/>
+                        <Button x:Name="bt_force_close" Padding="2" Margin=" 5 5 0 0" Content="강제종료" Grid.Column="1" Click="bt_force_close_Click"/>
+                    </Grid>
                 </StackPanel>
                 <StackPanel Margin="10 0 0 0" Grid.Column="1">
                     <TextBlock x:Name="tb_movie_date"/>
-                    <TextBlock x:Name="tb_movie_1" Margin="0 5 0 0 "/>
-                    <TextBlock x:Name="tb_movie_2" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_movie_3" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_movie_4" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_movie_5" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_movie_1" Margin="0 5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_movie_2" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_movie_3" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_movie_4" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_movie_5" Margin="0 2.5 0 0 "/>
+                    <TextBlock Margin="0 5 0 0">
+                    <Hyperlink x:Name="hyper_movie_1" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_movie_1,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_movie_2" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_movie_2,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_movie_3" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_movie_3,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_movie_4" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_movie_4,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_movie_5" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_movie_5,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+
                 </StackPanel>
                 <StackPanel Margin="10 0 0 0" Grid.Column="2">
                     <TextBlock x:Name="tb_search_date_time"/>
-                    <TextBlock Text="{Binding textBlocks[0]}" Margin="0 5 0 0 " x:Name="tb_search_1"/>
-                    <TextBlock x:Name="tb_search_2" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_search_3" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_search_4" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_search_5" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_search_6" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_search_7" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_search_8" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_search_9" Margin="0 2.5 0 0 "/>
-                    <TextBlock x:Name="tb_search_10" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" Text="{Binding textBlocks[0]}" Margin="0 5 0 0 " x:Name="tb_search_1"/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_search_2" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_search_3" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_search_4" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_search_5" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_search_6" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_search_7" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_search_8" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_search_9" Margin="0 2.5 0 0 "/>
+                    <TextBlock Visibility="Collapsed" x:Name="tb_search_10" Margin="0 2.5 0 0 "/>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_search_1" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_search_1,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_search_2" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_search_2,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_search_3" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_search_3,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_search_4" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_search_4,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_search_5" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_search_5,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_search_6" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_search_6,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_search_7" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_search_7,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_search_8" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_search_8,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_search_9" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_search_9,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Margin="0 2.5 0 0">
+                    <Hyperlink x:Name="hyper_search_10" NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                        <Run Text="{Binding ElementName=tb_search_10,Path=Text, Mode=TwoWay}"/>
+                        </Hyperlink>
+                    </TextBlock>
                 </StackPanel>
-                <StackPanel Margin=" 10 0 0 0" Grid.Column="3">
-                    <TextBlock x:Name="tb_test"/>
+                <StackPanel x:Name="Panel_login" Grid.Column="3">
+                    <Grid Visibility="Visible" x:Name="grid_login">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock  Text="아이디"/>
+                            <TextBlock  Margin="0 5 0 0" Text="비밀번호"/>
+                            <TextBox IsReadOnly="False" Text="{Binding ElementName=slider_1,Path=Value,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="tb_slider" Margin="0,10,10,0" Height="19" />
+                        </StackPanel>
+                        <StackPanel Margin=" 5 0 0 0" Grid.Column="1">
+                            <TextBox x:Name="tb_id"/>
+                            <PasswordBox x:Name="tb_pswd" Margin=" 0 5 0 0"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Button x:Name="bt_login" Margin="0,6,10,0" Content="로그인" Click="bt_login_Click"/>
+                                <Button Content="회원가입" x:Name="bt_register" Grid.Column="1" Margin="5 6 5 0" Click="bt_register_Click"/>
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Visibility="Collapsed" x:Name="grid_logged">
+                        <StackPanel>
+                            <TextBlock x:Name="tb_hello" Text=""/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Margin=" 5 5 5 0" Grid.Column="0">
+                                    <Button x:Name="bt_myinfo" Content="내 정보" Click="bt_myinfo_Click"/>
+                                </StackPanel>
+                                <StackPanel Margin=" 0 5 5 0" Grid.Column="1">
+                                    <Button x:Name="bt_logout" Content="로그아웃" Click="bt_logout_Click"/>
+                                </StackPanel>
+                            </Grid>              
+                        </StackPanel>
+                    </Grid>
+                    <Slider  IsSnapToTickEnabled="True" x:Name="slider_1" Margin="0 5 0 0" Maximum="100" Cursor="Pen">
+                        <Slider.Effect>
+                            <DropShadowEffect/>
+                        </Slider.Effect>
+                    </Slider>
+                    <Button x:Name="bt_testest" Margin="0,5,145,0" Content="연습장" HorizontalAlignment="Right" Width="45" Click="bt_testest_Click"/>
+                    <Button x:Name="bt_weather_update" Content="날씨업뎃" Margin="5 5 130 0" Click="bt_weather_update_Click"/>
+                    <TextBox Visibility="Collapsed" x:Name="tb_dummy_yymmddtt"/>
+                    <TextBox Visibility="Collapsed" x:Name="tb_dummy_weather"/>
+                    <Button Margin="5 5 120 0" Content="날씨리스트" x:Name="bt_weather_grid" Click="bt_weather_grid_Click"/>
                 </StackPanel>
             </Grid>
         </StackPanel>

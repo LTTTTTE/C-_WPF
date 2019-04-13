@@ -14,4 +14,12 @@ C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.csproj.Generat
 C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.csproj.CoreCompileInputs.cache
 C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.exe
 C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.pdb
-C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.csprojResolveAssemblyReference.cache
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\Window2.g.cs
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\Window2.baml
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\DragonApp.csprojAssemblyReference.cache
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\Window3.g.cs
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\Window3.baml
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\Window4.g.cs
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\Window4.baml
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\Window5.g.cs
+C:\Users\DB2\source\repos\DragonApp\DragonApp\obj\Debug\Window5.baml

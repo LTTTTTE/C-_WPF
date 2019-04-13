@@ -19,7 +19,7 @@
                 <ToggleButton x:Name="bt_copy" Content="Copy" Margin="5 0 0 0" Grid.Column="2" Command = "ApplicationCommands.Copy"/>
                 <Button x:Name="bt_close" Content="Close" Margin="5 0 0 0" Grid.Column="3" Click="bt_close_Click"/>
             </Grid>
-            <TextBox  TextWrapping="Wrap" IsReadOnly="True" Margin="0 5 0 0" Padding="2" x:Name="tb_source" Height="380"/>
+            <TextBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto"    TextWrapping="Wrap" IsReadOnly="True" Margin="0 5 0 0" Padding="2" x:Name="tb_source" Height="380"/>
         </StackPanel>
     </Border>
 </Window>
